@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade — AlissonPass</title>
+<link rel="icon" href="logo.png">
+<style>
+  :root { --bg:#0b0f14; --text:#e6edf3; --muted:#8b97a5; --teal:#83d4cd; --line:rgba(255,255,255,.08); }
+  body { margin:0; font:16px/1.7 'Segoe UI',system-ui,sans-serif; color:var(--text); background:var(--bg); }
+  main { max-width:800px; margin:0 auto; padding:48px 20px 40px; }
+  h1 { font-size:30px; margin:0 0 4px; } h2 { font-size:20px; margin:32px 0 6px; color:var(--teal); }
+  .muted { color:var(--muted); } a { color:var(--teal); } li { margin:4px 0; }
+  footer { color:var(--muted); font-size:14px; border-top:1px solid var(--line); margin-top:40px; padding-top:16px; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="./">← AlissonPass</a></p>
+  <h1>Política de Privacidade</h1>
+  <p class="muted">Última atualização: 21 de outubro de 2026</p>
+
+  <p>O AlissonPass é um gerenciador de senhas e autenticador para computador, desenvolvido por Alisson Rozendo para uso pessoal. Esta política explica quais dados o aplicativo trata e como.</p>
+
+  <h2>1. Dados que você guarda no AlissonPass</h2>
+  <p>Logins, senhas, códigos de verificação (2FA), notas e cartões que você cadastra ficam em um arquivo de cofre <b>criptografado no seu próprio computador</b> (Argon2id + AES-256-GCM). A chave é formada pela sua senha mestra e pela sua Chave Secreta, que nunca são enviadas a lugar nenhum. O desenvolvedor não tem acesso a esses dados e não consegue recuperá-los.</p>
+
+  <h2>2. Uso da sua conta Google</h2>
+  <p>Se você escolher "Entrar com Google", o AlissonPass solicita apenas:</p>
+  <ul>
+    <li><b>Identificação básica</b> (nome, e-mail e foto do perfil), para mostrar qual conta está conectada;</li>
+    <li><b>Acesso à pasta de dados do aplicativo no Google Drive</b> (<code>https://www.googleapis.com/auth/drive.appdata</code>), para guardar e sincronizar o arquivo do cofre <b>já criptografado</b> entre os seus computadores.</li>
+  </ul>
+  <p>O AlissonPass <b>não</b> acessa outros arquivos do seu Drive, e-mails, contatos ou qualquer outro dado da sua conta. O token de acesso fica guardado somente no seu computador, protegido pelo Windows. Você pode remover o acesso a qualquer momento em <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a> ou pelo próprio aplicativo ("Sair da conta Google").</p>
+  <p>O uso das informações recebidas das APIs do Google segue a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de Dados do Usuário dos Serviços de API do Google</a>, incluindo os requisitos de Uso Limitado.</p>
+
+  <h2>3. O que NÃO fazemos</h2>
+  <ul>
+    <li>Não existe servidor do AlissonPass: nenhum dado seu é enviado ao desenvolvedor.</li>
+    <li>Não há anúncios, rastreamento, análise de uso ou venda de dados.</li>
+    <li>Os dados não são compartilhados com terceiros.</li>
+  </ul>
+
+  <h2>4. Conexões que o aplicativo faz</h2>
+  <ul>
+    <li><b>Google</b> (login e Google Drive), somente se você conectar sua conta.</li>
+    <li><b>Os próprios sites</b> que você salvou, para baixar o ícone deles (pode ser desligado nas configurações).</li>
+    <li><b>Have I Been Pwned</b>, somente quando você pede para verificar vazamentos: são enviados apenas os 5 primeiros caracteres de um resumo (hash) de cada senha — nunca a senha.</li>
+  </ul>
+
+  <h2>5. Exclusão de dados</h2>
+  <p>Para apagar tudo: use "Apagar cópia da nuvem" e "Sair da conta Google" no aplicativo, depois desinstale o programa e apague a pasta <code>%APPDATA%\AlissonPass</code>.</p>
+
+  <h2>6. Contato</h2>
+  <p>Dúvidas: <a href="mailto:alisson.rozendo1998@gmail.com">alisson.rozendo1998@gmail.com</a></p>
+
+  <footer>AlissonPass · <a href="./">Página inicial</a></footer>
+</main>
+</body>
+</html>
