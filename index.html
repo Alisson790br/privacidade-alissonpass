@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AlissonPass — Senhas e Autenticador</title>
+<meta name="description" content="AlissonPass: gerenciador de senhas e autenticador 2FA para Windows, com criptografia de ponta a ponta.">
+<link rel="icon" href="logo.png">
+<style>
+  :root { --bg:#0b0f14; --text:#e6edf3; --muted:#8b97a5; --teal:#83d4cd; --line:rgba(255,255,255,.08); }
+  * { box-sizing: border-box; }
+  body { margin:0; font:16px/1.6 'Segoe UI',system-ui,sans-serif; color:var(--text); background:radial-gradient(900px 500px at 10% -10%,rgba(131,212,205,.12),transparent 60%),var(--bg); }
+  main { max-width:860px; margin:0 auto; padding:56px 20px 40px; }
+  .hero { display:flex; align-items:center; gap:18px; margin-bottom:22px; }
+  .hero img { width:72px; height:72px; border-radius:20px; }
+  h1 { margin:0; font-size:38px; letter-spacing:-.02em; } h1 span { color:var(--teal); }
+  .lead { color:var(--muted); font-size:18px; margin:0 0 32px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; }
+  .card { border:1px solid var(--line); border-radius:14px; background:rgba(255,255,255,.035); padding:18px; }
+  .card b { display:block; margin-bottom:4px; }
+  .card span { color:var(--muted); font-size:14.5px; }
+  h2 { margin:40px 0 10px; font-size:22px; }
+  a { color:var(--teal); }
+  footer { color:var(--muted); font-size:14px; border-top:1px solid var(--line); margin-top:44px; padding-top:18px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="hero"><img src="logo.png" alt="Logo do AlissonPass"><h1>Alisson<span>Pass</span></h1></div>
+  <p class="lead">Gerenciador de senhas e autenticador (2FA) para Windows, com extensão para o navegador. Projeto pessoal de Alisson Rozendo.</p>
+
+  <div class="grid">
+    <div class="card"><b>🔐 Criptografia de ponta a ponta</b><span>Argon2id + AES-256-GCM. O cofre só abre com a sua senha mestra e a sua Chave Secreta.</span></div>
+    <div class="card"><b>⏱ Autenticador 2FA</b><span>Códigos de verificação de sites e apps, lidos por QR Code.</span></div>
+    <div class="card"><b>☁ Sincronização no seu Google Drive</b><span>Uma cópia <i>criptografada</i> fica na pasta privada do app no seu Drive. Ninguém além de você consegue ler.</span></div>
+    <div class="card"><b>🧩 Extensão do navegador</b><span>Preenche e salva logins nos sites, conversando com o programa por um canal criptografado.</span></div>
+  </div>
+
+  <h2>Como o AlissonPass usa a sua conta Google</h2>
+  <p>O login com Google serve apenas para guardar e sincronizar o arquivo do cofre <b>já criptografado</b> na pasta de dados do aplicativo no seu Google Drive (permissão <code>drive.appdata</code>). O AlissonPass não lê seus arquivos do Drive, seus e-mails ou contatos, e não tem servidor próprio: tudo acontece no seu computador.</p>
+  <p>Detalhes na <a href="privacidade.html">Política de Privacidade</a>.</p>
+
+  <footer>AlissonPass · Contato: <a href="mailto:alisson.rozendo1998@gmail.com">alisson.rozendo1998@gmail.com</a> · <a href="privacidade.html">Política de Privacidade</a></footer>
+</main>
+</body>
+</html>
